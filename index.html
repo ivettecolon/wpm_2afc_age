@@ -25,7 +25,6 @@
     
   <script>
 
-    let sona_id = jsPsych.data.urlVariables()['sona_id']
 
     var jsPsych = initJsPsych({
         show_progress_bar:false,
@@ -44,7 +43,8 @@
     });
 
 
-      
+      let sona_id = jsPsych.data.urlVariables()['sona_id']
+
 
   // generating a user id and file name  
   var secret_code  = jsPsych.randomization.randomID(8);
